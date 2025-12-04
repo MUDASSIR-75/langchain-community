@@ -449,6 +449,9 @@ if TYPE_CHECKING:
     from langchain_community.document_loaders.surrealdb import (
         SurrealDBLoader,
     )
+    from langchain_community.document_loaders.supadata import (
+        SupadataLoader,
+    )
     from langchain_community.document_loaders.telegram import (
         TelegramChatApiLoader,
         TelegramChatFileLoader,
@@ -532,9 +535,7 @@ if TYPE_CHECKING:
     from langchain_community.document_loaders.yuque import (
         YuqueLoader,
     )
-    from langchain_community.document_loaders.supadata import (
-        SupadataLoader,
-    )
+
 
 
 _module_lookup = {
@@ -692,6 +693,7 @@ _module_lookup = {
     "SpreedlyLoader": "langchain_community.document_loaders.spreedly",
     "StripeLoader": "langchain_community.document_loaders.stripe",
     "SurrealDBLoader": "langchain_community.document_loaders.surrealdb",
+    "SupadataLoader": "langchain_community.document_loaders.supadata",
     "TelegramChatApiLoader": "langchain_community.document_loaders.telegram",
     "TelegramChatFileLoader": "langchain_community.document_loaders.telegram",
     "TelegramChatLoader": "langchain_community.document_loaders.telegram",
@@ -734,9 +736,7 @@ _module_lookup = {
     "XorbitsLoader": "langchain_community.document_loaders.xorbits",
     "YoutubeAudioLoader": "langchain_community.document_loaders.blob_loaders",
     "YoutubeLoader": "langchain_community.document_loaders.youtube",
-    "YuqueLoader": "langchain_community.document_loaders.yuque",
-    "SupadataLoader": "langchain_community.document_loaders.supadata",
-
+    "YuqueLoader": "langchain_community.document_loaders.yuque"
 }
 
 
@@ -902,6 +902,7 @@ __all__ = [
     "SpreedlyLoader",
     "StripeLoader",
     "SurrealDBLoader",
+    "SupadataLoader",
     "TelegramChatApiLoader",
     "TelegramChatFileLoader",
     "TelegramChatLoader",
@@ -945,5 +946,4 @@ __all__ = [
     "YoutubeAudioLoader",
     "YoutubeLoader",
     "YuqueLoader",
-    "SupadataLoader"
 ]
